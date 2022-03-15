@@ -13,19 +13,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         intToText(num)
     }
 
     @IBOutlet weak var valueLabel: UILabel!
     @IBAction func countUpButton(_ sender: Any) {
-        
         num = num + 1
         intToText(num)
     }
     
     @IBAction func clearButton(_ sender: Any) {
-        
         num = 0
         intToText(num)
     }

@@ -14,23 +14,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        valueLabel.text = String(num)
-        // Do any additional setup after loading the view.
+        intToText(num)
     }
 
     @IBOutlet weak var valueLabel: UILabel!
     @IBAction func countUpButton(_ sender: Any) {
         
-        let count = 1
-        num = num + count
-        valueLabel.text = String(num)
+        num = num + 1
+        intToText(num)
     }
     
     @IBAction func clearButton(_ sender: Any) {
         
         num = 0
-        valueLabel.text = String(num)
-        
+        intToText(num)
+    }
+    
+    func intToText (_ value: Int) {
+        valueLabel.text = String(value)
     }
 }
 

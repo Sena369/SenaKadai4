@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         intToText(num)
     }
 
-    @IBOutlet weak var valueLabel: UILabel!
+    @IBOutlet private weak var valueLabel: UILabel!
     @IBAction func countUpButton(_ sender: Any) {
         num = num + 1
         intToText(num)
